@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Test</string>
+    <string name="action_settings">Settings</string>
+	<string name="true_button">Adevărat</string>
+	<string name="false_button">Fals</string>
+	<string name="next_button">Înainte</string>	
+	<string name="correct_toast">Corect!</string>
+	<string name="incorrect_toast">Incorect!</string>
+	<string name="question_suma">Suma numerelor cuprinse intre 8 si 18 este un numar par.</string>
+	<string name="question_grup">Un grup de 5 oameni trebuie sa contina 3 prieteni comuni sau 3 straini.</string>
+	<string name="question_zi">Daca a 2-a zi a lunii este vineri, atunci a 12-a zi a lunii este marti:</string>
+	<string name="question_mileniu">Un nou mileniu a inceput pe 1 ianuarie 2001, dar secolul 21 a inceput pe 1 ianuarie 2000.</string>
+	<string name="question_culori">Daca rosul este o combinatie intre mov si galben, albastrul intre verde si mov, atunci portocaliul este o combinatie intre galben si verde.</string>
+	<string name="menu_settings">Settings</string>
+	
+</resources>
