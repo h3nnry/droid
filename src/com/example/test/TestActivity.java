@@ -16,6 +16,7 @@ public class TestActivity extends ActionBarActivity {
 	private Button mFalseButton;
 	private Button mNextButton;
 	private TextView mQuestionTextView;
+	private TextView mH3nry;
 	
 	private TrueFalse[] mQuestionBank = new TrueFalse[]{
 			new TrueFalse(R.string.question_suma, true),
@@ -72,6 +73,16 @@ public class TestActivity extends ActionBarActivity {
 				// TODO Auto-generated method stub
 				checkAnswer(false);
 				
+			}
+		});
+		mH3nry = (TextView)findViewById(R.id.h3nry);
+		mH3nry.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+				updateQuestion();
 			}
 		});
 		mNextButton = (Button)findViewById(R.id.next_button);

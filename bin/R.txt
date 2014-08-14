@@ -234,7 +234,9 @@ int drawable abc_textfield_searchview_holo_dark 0x7f020053
 int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
-int drawable ic_launcher 0x7f020057
+int drawable arrow_left 0x7f020057
+int drawable arrow_right 0x7f020058
+int drawable ic_launcher 0x7f020059
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -246,7 +248,7 @@ int id action_context_bar 0x7f05001d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_settings 0x7f050040
+int id action_settings 0x7f050041
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
@@ -261,6 +263,7 @@ int id end 0x7f050013
 int id expand_activities_button 0x7f050026
 int id expanded_menu 0x7f05002c
 int id false_button 0x7f05003e
+int id h3nry 0x7f050040
 int id home 0x7f050014
 int id homeAsUp 0x7f050005
 int id icon 0x7f05002a
@@ -345,8 +348,9 @@ int string action_settings 0x7f0a000e
 int string app_name 0x7f0a000d
 int string correct_toast 0x7f0a0012
 int string false_button 0x7f0a0010
+int string h3nry 0x7f0a0019
 int string incorrect_toast 0x7f0a0013
-int string menu_settings 0x7f0a0019
+int string menu_settings 0x7f0a001a
 int string next_button 0x7f0a0011
 int string question_culori 0x7f0a0018
 int string question_grup 0x7f0a0015
