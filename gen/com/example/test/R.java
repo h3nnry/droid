@@ -1250,10 +1250,12 @@ containing a value of this type.
         public static final int action_settings=0x7f0a000e;
         public static final int app_name=0x7f0a000d;
         public static final int correct_toast=0x7f0a0012;
+        public static final int desc_next=0x7f0a001c;
+        public static final int desc_prev=0x7f0a001b;
         public static final int false_button=0x7f0a0010;
         public static final int h3nry=0x7f0a0019;
         public static final int incorrect_toast=0x7f0a0013;
-        public static final int menu_settings=0x7f0a001b;
+        public static final int menu_settings=0x7f0a001d;
         public static final int next_button=0x7f0a0011;
         public static final int previous_button=0x7f0a001a;
         public static final int question_culori=0x7f0a0018;

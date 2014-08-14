@@ -8,16 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ImageButton;
 
 import com.bignerdranch.android.test.TrueFalse;
 
 public class TestActivity extends ActionBarActivity {
 	private Button mTrueButton;
 	private Button mFalseButton;
-	private Button mNextButton;
+	private ImageButton mNextButton;
 	private TextView mQuestionTextView;
 	private TextView mH3nry;
-	private Button mPreviousButton;
+	private ImageButton mPreviousButton;
 	
 	private TrueFalse[] mQuestionBank = new TrueFalse[]{
 			new TrueFalse(R.string.question_suma, true),
@@ -86,7 +87,7 @@ public class TestActivity extends ActionBarActivity {
 				updateQuestion();
 			}
 		});
-		mPreviousButton = (Button)findViewById(R.id.previous_button);
+		mPreviousButton = (ImageButton)findViewById(R.id.previous_button);
 		mPreviousButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -98,7 +99,7 @@ public class TestActivity extends ActionBarActivity {
 				updateQuestion();
 			}
 		});
-		mNextButton = (Button)findViewById(R.id.next_button);
+		mNextButton = (ImageButton)findViewById(R.id.next_button);
 		mNextButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
