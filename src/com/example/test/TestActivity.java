@@ -2,13 +2,14 @@ package com.example.test;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ImageButton;
 
 import com.bignerdranch.android.test.TrueFalse;
 
@@ -19,6 +20,7 @@ public class TestActivity extends ActionBarActivity {
 	private TextView mQuestionTextView;
 	private TextView mH3nry;
 	private ImageButton mPreviousButton;
+	private static final String TAG = "TestActivity"; 
 	
 	private TrueFalse[] mQuestionBank = new TrueFalse[]{
 			new TrueFalse(R.string.question_suma, true),
@@ -28,6 +30,36 @@ public class TestActivity extends ActionBarActivity {
 			new TrueFalse(R.string.question_culori, false),
 	};
 	private int mCurrentIndex = 0;
+	
+	@Override
+	public void onStart(){
+		super.onStart();
+		Log.d(TAG, "onStart() called");
+	}
+	
+	@Override
+	public void onPause(){
+		super.onPause();
+		Log.d(TAG, "onPause() called");
+	}
+	
+	@Override
+	public void onResume(){
+		super.onResume();
+		Log.d(TAG, "onResume() called");
+	}
+	
+	@Override
+	public void onStop(){
+		super.onStop();
+		Log.d(TAG, "onStop() called");
+	}
+	
+	@Override
+	public void onDestroy(){
+		super.onDestroy();
+		Log.d(TAG, "onDestroy() called");
+	}
 	
 	private void updateQuestion(){
 		int question = mQuestionBank[mCurrentIndex].getQuestion();
@@ -51,6 +83,7 @@ public class TestActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Log.d(TAG, "onCreate(Bundle) called");
 		setContentView(R.layout.activity_test);
 		
 		mQuestionTextView = (TextView)findViewById(R.id.question_text_view);
