@@ -17,6 +17,7 @@ public class TestActivity extends ActionBarActivity {
 	private Button mNextButton;
 	private TextView mQuestionTextView;
 	private TextView mH3nry;
+	private Button mPreviousButton;
 	
 	private TrueFalse[] mQuestionBank = new TrueFalse[]{
 			new TrueFalse(R.string.question_suma, true),
@@ -82,6 +83,18 @@ public class TestActivity extends ActionBarActivity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+				updateQuestion();
+			}
+		});
+		mPreviousButton = (Button)findViewById(R.id.previous_button);
+		mPreviousButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				if(mCurrentIndex>0){
+					mCurrentIndex = (mCurrentIndex -1) % mQuestionBank.length;
+				}
 				updateQuestion();
 			}
 		});
