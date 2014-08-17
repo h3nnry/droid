@@ -1,17 +1,19 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:gravity="center"
-	android:orientation="vertical" >
+	android:layout_height="match_parent" >
 	<TextView
 		android:id="@+id/question_text_view"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
 		android:padding="24dp" 
 		/>
 	<LinearLayout
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		android:layout_marginBottom="50dp"
+		android:layout_gravity="center_vertical|center_horizontal"
 		android:orientation="horizontal" >
 		<Button
 		    android:id="@+id/true_button"
@@ -27,6 +29,7 @@
 	<LinearLayout
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical|center_horizontal"
 	    android:orientation="horizontal" >
 		<ImageButton 
 		    android:id="@+id/previous_button"
@@ -38,18 +41,33 @@
 		    android:id="@+id/next_button"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|right"
 			android:src="@drawable/arrow_right"
 			android:contentDescription="@string/desc_next" />
-		</LinearLayout>		
-		<Button
-		    android:id="@+id/cheat_button"
+		</LinearLayout>
+		<LinearLayout
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:text="@string/cheat_button" />
-		<TextView
-		    android:id="@+id/h3nry"
+		    android:orientation="horizontal"
+			android:layout_gravity="center_vertical|center_horizontal" >
+			<TextView
+			    android:id="@+id/h3nry"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 	
+				android:layout_marginTop="50dp"
+			    android:padding="5dp"
+			    android:text="@string/h3nry" />
+		</LinearLayout>
+		<LinearLayout
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:padding="5dp"
-		    android:text="@string/h3nry" />
-</LinearLayout>
+	    	android:orientation="horizontal" 	
+			android:layout_marginTop="60dp"
+	    	android:layout_gravity="center_vertical|center_horizontal" >		
+			<Button
+			    android:id="@+id/cheat_button"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/cheat_button" />
+		</LinearLayout>
+</FrameLayout>

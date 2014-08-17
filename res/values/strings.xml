@@ -16,7 +16,12 @@
 	<string name="h3nry">h3nry</string>
 	<string name="previous_button">Înapoi</string>
 	<string name="desc_prev">Previous Button</string>
-	<string name="desc_next">Next Button</string>	
+	<string name="desc_next">Next Button</string>
+	<string name="cheat_button">Răspuns</string>
+	<string name="judgement_toast">Ai trişat!</string>
+	<string name="warning_text">Eşti sigur că vrei s-o faci?</string>
+	<string name="show_answer_button">Arată răspunsul</string>
+	<string name="judgment_toast">Nu e bine să trişezi.</string>	
 	<string name="menu_settings">Settings</string>
 	
 </resources>
