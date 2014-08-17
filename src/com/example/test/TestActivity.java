@@ -1,6 +1,7 @@
 package com.example.test;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -27,6 +28,7 @@ public class TestActivity extends ActionBarActivity {
 	private boolean mIsCheater;
 	private static final String KEY_CHEAT = "cheat";
 	private static final String KEY_CHEAT_ARRAY = "cheat_array";
+	private TextView mApiLevelText;
 	
 	private TrueFalse[] mQuestionBank = new TrueFalse[]{
 			new TrueFalse(R.string.question_suma, true),
@@ -103,6 +105,9 @@ public class TestActivity extends ActionBarActivity {
 		mQuestionTextView = (TextView)findViewById(R.id.question_text_view);
 		int question = mQuestionBank[mCurrentIndex].getQuestion();
 		mQuestionTextView.setText(question);
+		
+		mApiLevelText = (TextView)findViewById(R.id.api_level_text);
+		mApiLevelText.setText("Api level is" + Build.VERSION.SDK_INT);
 		
 		mTrueButton = (Button)findViewById(R.id.true_button);
 		mTrueButton.setOnClickListener(new View.OnClickListener() {
